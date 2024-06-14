@@ -1,0 +1,429 @@
+<html>
+	<head>
+		<title>YUGWEB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style type="text/css">
+      body{
+
+      	background:  #262626;
+        transition: all 2s;
+        
+      }
+      #text1{
+        -webkit-text-stroke: 1px white;
+        opacity: 45%;
+      }
+      #text2{
+          background: -webkit-linear-gradient(#fc0388,#9d03fc,#fc0388,#e04a5e);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          letter-spacing: 20px;
+          
+      }
+      .main2:hover{
+          text-shadow: 0px 0px 100px whitesmoke;
+      }
+      body{
+      	background-image: url("images/5.jpg");
+	 background-repeat: no-repeat;
+   background-attachment: fixed;
+      background-size: cover;
+      background-attachment: fixed;
+      transform: 180deg;
+}
+.name{
+    text-shadow: 2px 2px 2px blue,0px 0px 3px black,-2px -2px 2px red;
+    animation: effect 0.5s infinite alternate;
+}
+@keyframes effect{
+  0%{
+    text-shadow: 2px 2px 2px blue,0px 0px 3px black,-2px -2px 2px red;
+  }
+  100%{
+    text-shadow: 0px 0px 2px blue,-2px 0px 3px black,0px 3px 2px red;
+  }
+}
+  
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.main
+{
+  color: white;
+}
+.main:hover{
+  
+text-shadow: 3px 3px 20px whitesmoke;
+
+}
+.ho:hover{
+  text-shadow: 2px 2px 20px hotpink;
+}
+input,textarea{
+  width: 60% !important;
+  margin-left: 20%;
+  margin-top: 10px !important;
+  border-radius: 10px !important;
+  backdrop-filter: blur(100px) !important
+
+}
+
+label{
+  margin-top: 10px !important;
+  margin-left: 20% !important;
+}
+#icons,i{
+  font-size: 30px;
+  color: white;
+  display: inline !important;
+
+}
+#icons{
+  margin-top: 100px !important;
+}
+    </style>
+	</head>
+	<body>
+		<section class="home-wrapper">
+			<div class="container-fluid">
+			<nav class="navbar navbar-expand-sm bg-body-tertiary bg-body-dark navbar-dark fixed-top" style="backdrop-filter: blur(200px);padding:0px;">
+      <a class="navbar-brand" href="#" ><img src="images/log.jpeg" height="50px" width="50px" class="img-fluid" style="border-radius:100%;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+		    <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+        </li>      
+      </ul> 
+    </div>
+
+</nav>
+</div>
+<br/><br/>
+		<div class="text-center">
+	     <br/><h1 style="font-size:200px;font-family:fantasy; color: black; margin-top:-20px !important;" id="text1" class="mt-5" >IT STUDENT</h1>
+</div>
+<div class="text-center mt-5" >
+	<h4 style=" z-index:1; margin-top:-170px; font-size:35px;font-family:sans-serif;"  id="text2">HI,MY NAME IS</h4><br/><br/>
+	<h1 class="name" style="zindex:1; font-size:140px;font-family:fantasy;color: white; padding-top: 60px;">YOGESH SEN</h1>
+</div>
+</section>
+
+<br/>
+<!--about-->
+<div id="about">
+      <h1 style="padding: 10px;"></h1>
+    </div>
+<section class="mt-5">
+  <div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-6 col-sm-12">
+				<img src="images/p1.jpg" style="height:100%; width:80%; margin-left: 10%;" class="img-fluid" id="MyImg">
+    </div>
+    
+	<div align="center" class="col-lg-6 col-sm-12">
+			<h1 class="main" class="mb-4 display-5 text-center text-white"style="color: white;">About me</h1>
+ 				<p  class="main" class="mb-4 display-9 text-center"style="color: white; text-align:justify;text-transform: capitalize;">Hello! I'm Yogesh, a first-year student pursuing Bachelor of Computer Applications (BCA) from Star Infotech College. Stepping into the vibrant world of computer science, I'm enthusiastic about unraveling the mysteries of programming languages, algorithms, and the endless possibilities they offer in shaping our digital future.
+
+</p>
+        <h4 class="main" style="color:white; margin-left: 2px;">There are some information about me</h4>
+        <div class="main" class="container-fluid">
+          <h6 style="text-transform:capitalize;color:white;" class="mt-3">name : yogesh sen</h6>
+          <h6 style="text-transform:capitalize;color:white;" class="mt-3">age : 19</h6>
+          <h6 style="text-transform:capitalize;color:white;" class="mt-3">gender : male</h6>
+          <h6 style="text-transform:uppercase;color:white;" class="mt-3">dob : 10/04/2004</h6>
+          <h6 style="text-transform:capitalize;color:white;" class="mt-3">languages : hindi,english</h6>
+          <h6 style="text-transform:capitalize;color:white;" class="mt-3">Contact : +91-6376097102</h6>
+          <h6 style="color:white;" class="mt-3">Email : yogeshkumersen9117@gmail.com</h6>
+          <h6 style="text-transform:capitalize;color:white;" class="mt-3">city : ajmer</h6>
+          <h6 style="text-transform:capitalize;color:white;" class="mt-3">country : india</h6>
+        </div>
+        <div class="row" id="icons">
+            <a href="https://www.instagram.com/_yug.thakur/?igsh=b2o4dHpmMTJlMWd2"><i class="bi bi-instagram ho"></i></a>
+            <a href="https://wa.link/y9jnn3"><i class="bi bi-whatsapp ho"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#"><i class="bi bi-envelope-fill ho"></i></a>
+            <a href="+916376097102"><i class="bi bi-phone ho"></i></a>
+        </div>
+	</div>
+</div>
+</div>
+</section>
+<section>
+  <!--education-->
+    <h2  class="mb-4 display-5 main text-center mt-5"style="color: white;">Education</h2>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/kms.webp" style="height:280px;width: 400px;">
+        </div> 
+        <div class="col-lg-7 col-md-7 col-sm-12 ">
+          <h3 class="mb-4 main text-center mt-5"style="color: white; text-transform: capitalize;">Senior Secondary And Secondary</h3>
+          <p class="mb-4 main text-center"style="color: white;font-size:17px" data-aos="fade-up">I did my Secondary and Senior Secondary education form Khwaja Modal School Ajmer. At that time my favorite subject was Computer Science.
+
+          </p>
+        </div>  
+    </div>
+    <div class="row">
+        <div class="col-lg-7 col-md-7 col-sm-12">
+          <h3 class="mb-4 main text-center mt-5"style="color: white; text-transform: capitalize;">graduation</h3>
+        <p  class="mb-4 main text-justify"style="color: white;font-size:17px;"> I'am pursuing BCA from Star Infotect College Ajmer. It is a best It College in Ajmer. I love coding and I like all programming langauages.</p>
+        </div> 
+        <div class="col-lg-5 col-md-5 col-sm-12 ">
+           <img src="images/st1.jpeg" style="height:280px;wedith:400px;">
+        </div>  
+    </div>
+  </div>
+</section><br><br><br>
+  <!--skills--> 
+ <!--  <div >
+      <h1 style="padding-bottom: 20px;"></h1>
+    </div> -->
+    <div id="skills" class="container-fluid" style=" padding-top:50px;">
+      <h1 class="mb-4 display-5 main text-center"style="color: white;">Skills</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <h5 style="color:white;">HTML</h5>
+            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+               <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+           </div><br>
+          <h5 style="color:white;">CSS</h5>
+            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+               <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+           </div><br>
+           <h5 style="color:white;">Bootstrap</h5>
+         <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+         </div><br>
+         <h5 style="color:white;">C-programing</h5>
+         <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+         </div><br>
+         <h5 style="color:white;">PYTHON</h5>
+         <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%">30%</div>
+         </div>
+           </div>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <!--gallery--->
+    <div class="container-fluid mt-5">
+
+    <div class="row pt-5" id="Gallery" >
+          
+            <h1   class="mb-4 display-5 main text-center"style="color: white;">Gallery</h1>
+    </div>
+
+    <div class=" container mt-3">
+      <div class="row gx-3">
+        <div class="col-lg-3  col-sm-6 justify-content-center pt-5">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/p2.jpg" alt="yug" class="img-fluid" style="width:300px;height:300px;  filter: grayscale(100%);">
+                </div>
+                  <div class="flip-card-back">
+                   <img src="images/p2.jpg" alt="yug"  class="img-fluid" style="width:300px;height:300px;">
+                  </div>
+           </div>
+
+        </div>
+      </div>
+      <div class="col-lg-3  col-sm-6 justify-content-center pt-5">
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/p3.jpg" alt="yug" class="img-fluid" style="width:300px;height:300px;  filter: grayscale(100%);">
+                </div>
+                  <div class="flip-card-back">
+                   <img src="images/p3.jpg" alt="yug"class="img-fluid"  style="width:300px;height:300px;">
+                  </div>
+           </div>
+      </div>
+      </div>
+
+       <div class="col-lg-3  col-sm-6 justify-content-center pt-5">
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/p5.jpg" alt="yug" class="img-fluid" style="width:300px;height:300px;  filter: grayscale(100%);">
+                </div>
+                  <div class="flip-card-back">
+                   <img src="images/p5.jpg" alt="yug" class="img-fluid"  style="width:300px;height:300px;">
+                  </div>
+           </div>
+      </div>
+      </div>
+
+        <div class="col-lg-3 col-sm-6 justify-content-center pt-5">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/p4.jpg" class="img-fluid" alt="yug" style="width:300px;height:300px;  filter: grayscale(100%);">
+                </div>
+                  <div class="flip-card-back">
+                    <img src="images/p4.jpg"class="img-fluid"  alt="yug" style="width:300px;height:300px;">
+                  </div>
+           </div>
+      </div>
+      </div>
+    </div>
+      <div class="row gx-3">
+        <div class="col-lg-3 col-sm-6 justify-content-center pt-5 mt-5">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/p8.jpg" class="img-fluid"alt="yug" style="width:280px;height:350px;  filter: grayscale(100%);">
+                </div>
+                  <div class="flip-card-back">
+                    <img src="images/p8.jpg" class="img-fluid" alt="yug" style="width:280px;height:350px;">
+                  </div>
+           </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-sm-6 justify-content-center pt-5 mt-5">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/p10.jpg"class="img-fluid" alt="yug" style="width:280px;height:350px;  filter: grayscale(100%);">
+                </div>
+                  <div class="flip-card-back">
+                     <img src="images/p10.jpg" class="img-fluid" alt="yug" style="width:280px;height:350px; ">
+                  </div>
+           </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-sm-6 justify-content-center pt-5 mt-5">
+        <div class="flip-card">
+         <div class="flip-card-inner">
+             <div class="flip-card-front">
+                  <img src="images/2.jpeg" class="img-fluid" alt="yug" style="width:280px;height:350px;  filter: grayscale(100%);">
+            </div>
+            <div class="flip-card-back">
+               <img src="images/2.jpeg" alt="yug"  class="img-fluid"style="width:280px;height:350px; ">
+          </div>
+         </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-sm-6 justify-content-center pt-5 mt-5">
+         <div class="flip-card">
+            <div class="flip-card-inner">
+               <div class="flip-card-front">
+                  <img src="images/13.jpg" alt="yug" style="width:300px;height:350px;  filter: grayscale(100%);">
+             </div>
+            <div class="flip-card-back">
+               <img src="images/13.jpg" alt="yug" style="width:300px;height:350px; ">
+          </div>
+         </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br/><br/><br/>
+ <!----contact----->  
+ <div class="container-fluid" id="contact">
+ <div class="row ms-5">
+    <div class="col-lg-12"> 
+        <h1 id="skills"class="mb-4 pt-5  display-5 main text-center"style="color: white; margin-left:-70px;">Contact</h1>
+    </div>
+
+    <div class="col-lg-12 w-75 pb-5" style="background: transparent;">
+        <div class="row text-center">
+    
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="row ms-5">
+            <label class="text-light">*Name:</label>
+            <input type="text" name="name" class="form-control w-75" type="hidden" name="access_key" value="">
+,
+        </div>
+        <div class="row ms-5">
+            <label class="text-light">*Phone:</label>
+            <input type="phone" name="number" class="form-control w-75">
+        </div>
+        <div class="row ms-5">
+            <label class="text-light">*E-mail:</label>
+            <input type="email" name="name" class="form-control w-75">
+            
+        </div>
+        <div class="row ms-5">
+            <label class="text-light">*Your Message:</label>
+            <textarea type="text" name="name" class="form-control w-75">Write Here...</textarea>
+            
+        </div>
+        <div align="center" class="row ms-5 text-center mt-5">
+            <a href="#" ><center><button class="main2"style="height: 140% !important; color:black; width: 15% !important; border-radius: 50px;">Submit</button></center></a>
+        </div>
+      </form>
+    </div>
+ </div>
+</div>
+
+<div class="container text-center py-5">
+      <p class="m-0" style="color: #ffffff !important;">&copy; <a class="text-white font-weight-bold" href="#">Copy Right</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#">Yogesh Sen</a>
+      </p>
+  </div>
+</div>
+</body>
+</html>
+
+
+          
+ 
